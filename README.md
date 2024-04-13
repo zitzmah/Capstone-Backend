@@ -39,7 +39,6 @@ flowchart TD
     A[App] --> B(Header)
     A --> C{Components}
     A --> D[Footer]
-    A --> E[About Me]
     C --> F[Index]
     C --> G[Show]
 ```
