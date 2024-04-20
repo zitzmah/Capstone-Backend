@@ -17,13 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from patients.views import PatientViewSet, TestViewSet, BloodUnitViewSet
+from patients.views import PatientViewSet
 
 router=routers.DefaultRouter()
 
 router.register(r'patient', PatientViewSet)
-router.register(r'tests', TestViewSet)
-router.register(r'bloodunits', BloodUnitViewSet)
 
 
 urlpatterns = [
